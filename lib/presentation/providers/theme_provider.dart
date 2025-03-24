@@ -15,7 +15,7 @@ class ThemeNotifier extends StateNotifier<AppTheme>{
 
   ThemeNotifier() : super(AppTheme());
 
-  void toggleTheme(){
+  void toggleDarkMode(){
     state = state.copyWith(isDarkMode: !state.isDarkMode); // Change the value of isDarkMode
   }
 
