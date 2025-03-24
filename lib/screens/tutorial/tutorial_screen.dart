@@ -67,7 +67,7 @@ class _TutorialScreenState extends State<TutorialScreen> {
               right: 20,
               top: 50,
               child: TextButton(
-                child: const Text('Salir'),
+                child: const Text('Salir', style: TextStyle(fontWeight: FontWeight.w500),),
                 onPressed: () => context.pop(),
               )),
           endPage
@@ -114,14 +114,14 @@ class _Slide extends StatelessWidget {
             ),
             Text(
               title,
-              style: titleStyle,
+              style: titleStyle?.copyWith(color: Colors.blue, fontWeight: FontWeight.w700),
             ),
             const SizedBox(
               height: 20,
             ),
             Text(
               caption,
-              style: captionStyle,
+              style: captionStyle?.copyWith(color: Colors.black),
             ),
           ],
         ),

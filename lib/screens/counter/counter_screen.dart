@@ -28,9 +28,25 @@ class CounterScreen extends ConsumerWidget {
         ],
       ),
       body: Center(child: Text('Value: $clickCounter', style: Theme.of(context).textTheme.titleLarge),),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-        onPressed: () { ref.read(counterProvider.notifier).state++; },
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            heroTag: "decrement",
+            child: const Icon(Icons.remove),
+            onPressed: () {
+              ref.read(counterProvider.notifier).state--;
+            },
+          ),
+          const SizedBox(width: 10),
+          FloatingActionButton(
+            heroTag: "increment",
+            child: const Icon(Icons.add),
+            onPressed: () {
+              ref.read(counterProvider.notifier).state++;
+            },
+          ),
+        ],
       ),
     );
   }
