@@ -7,6 +7,7 @@ environment:
   sdk: '>=3.0.6 <4.0.0'
 
 dependencies:
+  animate_do: ^4.2.0
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1
@@ -24,3 +25,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/infinite/jar-loading.gif
+    - assets/images/tutorial/1.png
+    - assets/images/tutorial/2.png
+    - assets/images/tutorial/3.png

@@ -16,11 +16,10 @@ class MainApp extends ConsumerWidget {
     final AppTheme appTheme = ref.watch(themeNotifierProvider);
 
     return MaterialApp.router(
-        title: 'Flutter Demo',
+        title: 'Flutter Widget Demo',
         theme: appTheme.themeData, // Get the theme from the provider
         debugShowCheckedModeBanner: false,
         routerConfig: appRouter,
-
     );
   }
 }

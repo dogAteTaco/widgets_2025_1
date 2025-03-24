@@ -1,0 +1,11 @@
+export 'package:widgets_app/screens/animated/animated_screen.dart';
+export 'package:widgets_app/screens/buttons/buttons_screen.dart';
+export 'package:widgets_app/screens/cards/cards_screen.dart';
+export 'package:widgets_app/screens/counter/counter_screen.dart';
+export 'package:widgets_app/screens/home/home_screen.dart';
+export 'package:widgets_app/screens/infinite_scroll/infinite_scroll_screen.dart';
+export 'package:widgets_app/screens/progress/progress_screen.dart';
+export 'package:widgets_app/screens/snackbar/snackbar_screen.dart';
+export 'package:widgets_app/screens/theme_changer/theme_changer_screen.dart';
+export 'package:widgets_app/screens/tutorial/tutorial_screen.dart';
+export 'package:widgets_app/screens/screens.dart';
